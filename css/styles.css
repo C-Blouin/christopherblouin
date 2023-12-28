@@ -342,7 +342,6 @@ main {
   margin-top: 6rem;
 }
 
-
 /* Start of Primary Hero Styles */
 
 #hero {
@@ -866,6 +865,7 @@ strong a:hover::after,
 
 
 @media screen and (max-width: 1100px) {
+  
   /* Convert the hero grid layout to a single column on smaller screens. */
   #hero {
     grid-template-columns: 1fr;
@@ -874,11 +874,6 @@ strong a:hover::after,
   #hero,
   #about {
     text-align: center;
-  }
-
-  #about,
-#experience {
-    align-items: center;
   }
 
   .hero-sub-text {
@@ -901,6 +896,14 @@ strong a:hover::after,
   }
 }
 
+@media screen and (max-width: 900px) {
+  #about,
+  #experience,
+  #featured-projects,
+  #contact-container {
+    margin-top: 1rem;
+  }
+}
 
 
 /* Media query to control the mobile navigation on device widths of 820px of the viewport. */
