@@ -121,9 +121,11 @@ window.addEventListener('scroll', function () {
 });
 
 
+/*
 
+Blur Functionaility Code 
 
-// Blur Functionaility Code
+*/
 
 openMenu.addEventListener('click', function () {
   main.classList.add('blur');
@@ -147,11 +149,38 @@ function toggleBlurClass() {
   }
 }
 
+/* Resume Link Functionality */
+
 const resumeLinkContainer = document.getElementById('resume-link-container');
 
 resumeLinkContainer.addEventListener('click', function () {
-
   // Once the container is clicked, the link will be opened in a new tab.
   window.open('https://c-blouin.github.io/christopherblouin/pdfs/christopher-blouin-2023-resume.pdf', '_blank');
-
 });
+
+/* 
+
+Fade & Slide in Animation Code
+
+Thank you to Fireship for this useful Scroll Animations reference, check it out here. https://www.youtube.com/watch?v=T33NN_pPeNI&t=13s
+
+*/
+
+// This code observes intersecting elements in the viewport, when an element is intersecting, the "slide-animation" class is added to the element, which triggers the animation from the CSS styles.
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    // Add the class to an intersecting element.
+    if (entry.isIntersecting) {
+      entry.target.classList.add("slide-animation");
+    }
+    // Once the element is not intersecting, remove the class. This can repeat as the user scrolls up and down the page.
+    else {
+      entry.target.classList.remove("slide-animation");
+    }
+  });
+});
+
+// Select all elements with the class of "hidden" and "vertical-hidden" and add them to the observer, to check if the slide-animation class should be added or removed.
+const hiddenElements = document.querySelectorAll(".hidden, .vertical-hidden");
+hiddenElements.forEach((el) => observer.observe(el));
