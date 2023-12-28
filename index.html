@@ -24,7 +24,7 @@
   <body>
     <header id="header-nav">
       <nav>
-        <div>
+        <div class="vertical-hidden">
           <a href="#hero" class="portfolio-logo" title="Logo">
             <img
               src="images/logo-mark.svg"
@@ -34,7 +34,7 @@
         </div>
         <div class="navigation__links toggle-menu" id="toggle-menu">
           <ion-icon name="close-outline" id="close-menu"></ion-icon>
-          <ol>
+          <ol class="vertical-hidden">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#featured-projects">Projects</a></li>
@@ -55,8 +55,8 @@
         <div class="hero-wrapper">
           <section id="hero">
             <div class="hero-content">
-              <h1>Hi, my name is</h1>
-              <h2>Christopher Blouin<span class="highlight">.</span></h2>
+              <h1 class="vertical-hidden">Hi, my name is</h1>
+              <h2 class="vertical-hidden">Christopher Blouin<span class="highlight">.</span></h2>
               <p class="hero-sub-text">
                 I’m a front-end web developer with a keen focus on crafting unique digital experiences! I believe through strong determination and commitment that anything can be accomplished, and I'm always up for learning new things! Currently, I'm focused on building upon my creative and technical abilities to ensure I find a development team that I can grow with, while having fun with everything too!
               </p>
@@ -64,7 +64,7 @@
                 <a href="#about" class="hero-button">More about me!</a>
               </div>
             </div>
-            <div class="profile-picture">
+            <div class="profile-picture vertical-hidden">
               <img src="images/self-portrait-avatar.png" alt="Christopher Blouin Self Portrait Avatar" />
             </div>
           </section>
@@ -72,7 +72,7 @@
 
         <section id="about">
 
-          <h2 class="section-heading">About Me</h2>
+          <h2 class="section-heading vertical-hidden">About Me</h2>
           <!-- Link to school website and program link -->
           <div>
             <p>
@@ -106,7 +106,7 @@
         </section>
 
         <section id="experience">
-          <h2 class="section-heading">Experience <span class="experience-heading">&</span> Education</h2>
+          <h2 class="section-heading vertical-hidden">Experience <span class="experience-heading">&</span> Education</h2>
           <p>
             I have been exploring web development for over two years, with many more to
             come! Throughout my experiences so far, I aspire toward opportunities to
@@ -115,7 +115,7 @@
           </p>
 
           <!-- Start of Education Grid -->
-          <article id="education-grid">
+          <article id="education-grid" class="hidden">
             <!-- First Grid Item Card -->
             <div>
               <h3>Georgian College</h3>
@@ -152,7 +152,7 @@
             <p>
               Here are a few technologies <span class="highlight">I've used recently</span> throughout my development endeavours!
             </p>
-            <ul class="skills-list">
+            <ul class="skills-list vertical-hidden">
               <li>HTML5</li>
               <li>CSS</li>
               <li>JavaScript (ES6+)</li>
@@ -173,7 +173,7 @@
             <p>
               Some technologies and concepts <span class="highlight">I'm currently exploring</span> and excited to use in the future!
             </p>
-            <ul class="skills-list">
+            <ul class="skills-list vertical-hidden">
               <li>MongoDb</li>
               <li>Express</li>
               <li>Angular</li>
@@ -191,8 +191,8 @@
         <section id="featured-projects">
             
           <!-- Start of Projects Intro -->
-          <h2 class="section-heading">Projects</h2>
-          <p>
+          <h2 class="section-heading vertical-hidden">Projects</h2>
+          <p class="vertical-hidden">
               Here is a collection of work I've built throughout my development ventures
               so far! If something seems interesting, feel free to look into the live
               application or dive into the code running it all!
@@ -209,7 +209,7 @@
                       <!-- Start of Primary Card Content -->
                       <article class="featured-content">
                           <!-- Project Title -->
-                          <div class="project-title">
+                          <div class="project-title vertical-hidden">
                               <h3>
                                 <a href="https://solaris-green.vercel.app/" title="View Live Application" target="_blank">Solaris</a></h3>
                           </div>
@@ -259,7 +259,7 @@
                       </article>
                       <!-- End of Card Content -->
                       <!-- Project Column Image -->
-                      <div class="project-image">
+                      <div class="project-image vertical-hidden">
                           <!-- Project Link When the Image is Clicked. -->
                           <a href="https://solaris-green.vercel.app/" title="View Live Application"
                               target="_blank">
@@ -273,7 +273,7 @@
                       <!-- Project Column Image -->
                       <div class="project-image">
                           <!-- Project Link When the Image is Clicked. -->
-                          <a href="https://sprout.azurewebsites.net/" title="View Live Application" target="_blank">
+                          <a href="https://sprout.azurewebsites.net/" title="View Live Application" target="_blank" class="vertical-hidden">
                               <img src="images/featured-project-images/sprout-project-screenshot-final.jpg"
                                   alt="Sprout Project Screenshot" />
                           </a>
@@ -281,7 +281,7 @@
                       <!-- Start of Primary Card Content -->
                       <article class="featured-content">
                           <!-- Project Title -->
-                          <div class="project-title">
+                          <div class="project-title vertical-hidden">
                               <h3><a href="https://sprout.azurewebsites.net/" title="View Live Application"
                                       target="_blank">Sprout</a></h3>
                           </div>
@@ -340,7 +340,7 @@
                       <!-- Start of Primary Card Content -->
                       <article class="featured-content">
                           <!-- Project Title -->
-                          <div class="project-title">
+                          <div class="project-title vertical-hidden">
                               <h3><a href="https://automoblox.vercel.app/" target="_blank">Automoblox Redesign</a></h3>
                           </div>
                           <!-- Project Description -->
@@ -388,7 +388,7 @@
                       </article>
                       <!-- End of Card Content -->
                       <!-- Project Column Image -->
-                      <div class="project-image">
+                      <div class="project-image vertical-hidden">
                           <!-- Project Link When the Image is Clicked. -->
                           <a href="https://automoblox.vercel.app/" title="View Live Application" target="_blank">
                               <img src="images/featured-project-images/automoblox-project-screenshot.jpg" alt="Automoblox Application Screenshot" />
@@ -399,7 +399,7 @@
                   <!-- Start of Second Project Card -->
                   <li class="featured-projects-card">
                     <!-- Project Column Image -->
-                    <div class="project-image">
+                    <div class="project-image vertical-hidden">
                         <!-- Project Link When the Image is Clicked. -->
                         <a href="https://c-blouin.github.io/style-stage-project/" title="View Live Application" target="_blank">
                             <img src="images/featured-project-images/howlish-forest-project-screenshot.jpg"
@@ -409,7 +409,7 @@
                     <!-- Start of Primary Card Content -->
                     <article class="featured-content">
                         <!-- Project Title -->
-                        <div class="project-title">
+                        <div class="project-title vertical-hidden">
                             <h3><a href="https://c-blouin.github.io/style-stage-project/" title="View Live Application"
                                     target="_blank">Howlish Forest</a></h3>
                         </div>
@@ -469,8 +469,8 @@
         <!-- Start of Other Projects Section-->
         <section id="projects">
           <!-- This section is for a few smaller projects I've developed through my personal time and studies -->
-          <h2 class="section-heading">Other Projects</h2>
-          <p>Here are some other projects I've developed over my studies and personal time. </p>
+          <h2 class="section-heading vertical-hidden">Other Projects</h2>
+          <p class="vertical-hidden">Here are some other projects I've developed over my studies and personal time. </p>
           <!-- Grid container to place all the project cards into. -->
           <div class="project-cards-wrapper">
             <!-- Emperor Project Card -->
@@ -533,7 +533,7 @@
                     </p>
                 </div>
                 <!-- List of Technologies Used in the Project. -->
-                <ul class="technology-list">
+                <ul class="technology-list vertical-hidden">
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>JavaScript</li>
@@ -599,7 +599,7 @@
                   </p>
               </div>
               <!-- List of Technologies Used in the Project. -->
-              <ul class="technology-list">
+              <ul class="technology-list vertical-hidden">
                   <li>HTML</li>
                   <li>CSS</li>
                   <li>JavaScript</li>
@@ -666,7 +666,7 @@
                     </p>
                 </div>
                 <!-- List of Technologies Used in the Project. -->
-                <ul class="technology-list">
+                <ul class="technology-list vertical-hidden">
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>JavaScript</li>
@@ -732,7 +732,7 @@
                   </p>
               </div>
               <!-- List of Technologies Used in the Project. -->
-              <ul class="technology-list">
+              <ul class="technology-list vertical-hidden">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
@@ -799,7 +799,7 @@
                     </p>
                 </div>
                 <!-- List of Technologies Used in the Project. -->
-                <ul class="technology-list">
+                <ul class="technology-list vertical-hidden">
                     <li>HTML</li>
                     <li>CSS</li>               
                 </ul>
@@ -864,7 +864,7 @@
                     </p>
                 </div>
                 <!-- List of Technologies Used in the Project. -->
-                <ul class="technology-list">
+                <ul class="technology-list vertical-hidden">
                     <li>HTML</li>
                     <li>CSS</li>               
                 </ul>
@@ -929,7 +929,7 @@
                     </p>
                 </div>
                 <!-- List of Technologies Used in the Project. -->
-                <ul class="technology-list">
+                <ul class="technology-list vertical-hidden">
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>JavaScript</li>               
@@ -995,7 +995,7 @@
                     </p>
                 </div>
                 <!-- List of Technologies Used in the Project. -->
-                <ul class="technology-list">
+                <ul class="technology-list vertical-hidden">
                     <li>HTML</li>
                     <li>CSS</li>                              
                 </ul>
@@ -1060,7 +1060,7 @@
                     </p>
                 </div>
                 <!-- List of Technologies Used in the Project. -->
-                <ul class="technology-list">
+                <ul class="technology-list vertical-hidden">
                     <li>HTML</li>
                     <li>CSS</li>  
                     <li>JavaScript</li>                            
@@ -1073,8 +1073,8 @@
         <!-- Start of Contact Section -->
         <section id="contact">
           <div class="contact-content">
-            <h2 class="section-heading">Contact Me!</h2>
-            <p>
+            <h2 class="section-heading vertical-hidden">Contact Me!</h2>
+            <p class="vertical-hidden">
               I'm always looking for opportunities to build upon my skills, if you would
               like to connect, don't hesitate to send a message. If you would just like
               to ask a question or chat, I'll try my very best to get back to you!
