@@ -146,3 +146,12 @@ function toggleBlurClass() {
     main.classList.remove('blur');
   }
 }
+
+const resumeLinkContainer = document.getElementById('resume-link-container');
+
+resumeLinkContainer.addEventListener('click', function () {
+
+  // Once the container is clicked, the link will be opened in a new tab.
+  window.open('https://c-blouin.github.io/christopherblouin/pdfs/christopher-blouin-2023-resume.pdf', '_blank');
+
+});
