@@ -56,7 +56,7 @@ html {
   --project-card-shadow: 10px 0 25px -12px #151516;  
 }
 
-/* For users that don't like animations or motion in the browser, disable all these properties. */
+/* For users that don't prefer animations or motion in the browser, disable the following style properties. */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
@@ -64,6 +64,67 @@ html {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+
+  .hidden,
+  .vertical-hidden {
+    transition: none;
+  }
+}
+
+/* Thank you to Fireship for this useful Scroll Animation. Here is the reference to the video tutorial https://www.youtube.com/watch?v=T33NN_pPeNI&t=13s */
+
+.hidden,
+.vertical-hidden {
+  opacity: 0;
+  filter: blur(5px);
+}
+
+.hidden {
+  transform: translateX(-100%);
+  transition: all 0.8s;
+}
+
+.vertical-hidden {
+  transform: translateY(50%);
+  transition: all 0.9s;
+}
+
+.slide-animation {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+@media screen and (max-width: 768px) {
+  
+  .hidden,
+  .vertical-hidden {
+    opacity: 0;
+    filter: blur(5px);
+  }
+
+  /* On mobile screens, the featured project cards will have no animation properties for usability purposes. */
+  .featured-projects-card .vertical-hidden {
+    transform: none;
+    transition: none;
+  }
+
+  .hidden {
+    transform: translateX(-100%);
+    transition: all 0.8s;
+  }
+
+  .vertical-hidden {
+    transform: translateY(50%);
+    transition: all 0.9s;
+  }
+
+  .slide-animation {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+  
 }
 
 /* Body styles, setting the global font size, removing escaping margins. */
@@ -480,7 +541,14 @@ section {
 
 .hero-button,
 .hero-link-group {
-  margin-top: 3rem;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .hero-button,
+  .hero-link-group {
+    margin-top: 3rem;
+  }
 }
 
 /* End of Hero Styles */
