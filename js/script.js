@@ -169,7 +169,7 @@ Thank you to Fireship for this useful Scroll Animations reference, check it out 
 // This code observes intersecting elements in the viewport, when an element is intersecting, the "slide-animation" class is added to the element, which triggers the animation from the CSS styles.
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    console.log(entry);
+    // console.log(entry);
     // Add the class to an intersecting element.
     if (entry.isIntersecting) {
       entry.target.classList.add("slide-animation");
